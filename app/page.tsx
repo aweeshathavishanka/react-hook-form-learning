@@ -1,6 +1,8 @@
+import BasicZodForm from "@/components/basic-zod-form";
 import CoreTrio from "@/components/core-trio";
 import MultipleErrorMessage from "@/components/multiple-error-message";
-import MyForm from "@/components/MyForm";
+import MyForm from "@/components/react-basic-hook-form";
+import SeparateSchemaZodForm from "@/components/separate-schema-zod";
 import UseForm from "@/components/use-form";
 import Image from "next/image";
 
@@ -31,6 +33,18 @@ export default function Home() {
             Multiple Error Message
           </h1>
           <MultipleErrorMessage />
+        </div>
+        <div className="bg-gray-100 p-5 rounded-lg">
+          <h1 className="text-indigo-600 font-medium text-3xl">
+            Basic Zod Form
+          </h1>
+          <BasicZodForm />
+        </div>
+        <div className="bg-gray-100 p-5 rounded-lg">
+          <h1 className="text-indigo-600 font-medium text-3xl">
+            Separate File Schema in ZOD
+          </h1>
+          <SeparateSchemaZodForm />
         </div>
       </div>
     </main>
