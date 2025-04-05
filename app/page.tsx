@@ -1,6 +1,7 @@
 import BasicZodForm from "@/components/basic-zod-form";
 import CoreTrio from "@/components/core-trio";
 import MultipleErrorMessage from "@/components/multiple-error-message";
+import NestedArrayWithValidateZodForm from "@/components/nestedArray-with-validation-form";
 import MyForm from "@/components/react-basic-hook-form";
 import SeparateSchemaZodForm from "@/components/separate-schema-zod";
 import UseForm from "@/components/use-form";
@@ -45,6 +46,12 @@ export default function Home() {
             Separate File Schema in ZOD
           </h1>
           <SeparateSchemaZodForm />
+        </div>
+        <div className="bg-gray-100 p-5 rounded-lg">
+          <h1 className="text-indigo-600 font-medium text-3xl">
+            Nested Array With Validation Zod Form
+          </h1>
+          <NestedArrayWithValidateZodForm />
         </div>
       </div>
     </main>
